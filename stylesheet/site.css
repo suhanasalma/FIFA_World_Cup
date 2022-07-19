@@ -5,13 +5,76 @@ html{
    font-size: 16px;
 
 }
+body{
+   max-width: 1800px;
+   margin: auto;
+}
+
+
+
+/* =========================================================
+GREAT SHOW
+============================================================= */
+
+
 .great-show{
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
+   gap:80px;
    background-color: rgb(70, 16, 70);
+   margin-top: 50px;
+   border-radius: 30px;
+
 }
 
 .great-show-details{
-   /* width: 50%; */
+   width: 30%;
    color:white;
+   
+}
+.great-show-title{
+   font-size: 4rem;
+   font-weight: 700;
+   line-height: 5rem;
+   padding-top: 60px;
+}
+.great-show-details a{
+   text-decoration: none;
+   color: white;
+   padding: 15px 25px;
+   background-color: darkred;
+   line-height: 5rem;
+
+}
+.great-show-img img{
+   Width:600px;
+   Height:631px;
+   margin-top:29px;
+}
+.watch-live-icon{
+   padding-left: 10px;;
+}
+
+
+/* =========================================================
+BLOG START
+=========================================================== */
+
+
+
+.blogs{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   /* display: flex; */
+}
+
+.blog{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
+
+.form{}
+
+.footer{
+   text-align: center;
 }
