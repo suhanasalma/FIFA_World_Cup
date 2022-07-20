@@ -10,7 +10,13 @@ body{
    margin: auto;
 }
 
+/* .container{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+ 
 
+} */
 
 /* =========================================================
 GREAT SHOW
@@ -24,6 +30,9 @@ GREAT SHOW
    background-color: rgb(70, 16, 70);
    margin-top: 50px;
    border-radius: 30px;
+
+   
+
 
 }
 
@@ -83,8 +92,6 @@ BLOG START
 }
 
 .blogs{
-   /* display: grid;
-   grid-template-columns: repeat(2, 1fr); */
    display: flex;
    margin-top: 160px;
    gap: 25px;
@@ -100,6 +107,9 @@ BLOG START
 .blog-section{
    width: 312px;
    height: 362px;
+   padding: 10px;
+   margin: 2%;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
  
 }
 
@@ -162,4 +172,64 @@ hr{
    margin-left: 20px;
    font-size: 3rem;
 
+}
+
+
+
+/* =========================================================
+MEDIA QUERY START
+=========================================================== */
+
+@media only screen and (max-width:600px) {
+   body{
+      width: 100%;
+   }
+   .great-show{
+      flex-direction: column;
+      margin: 20px;
+      padding: 0 60px;
+      align-items: center;
+   
+
+
+   }
+   .great-show-details{
+      width: 330px;
+      height: 300px;
+      text-align: center;
+      /* padding: 30px; */
+   }
+   .great-show-title{
+      font-size: 2rem;
+      margin: 0;
+      line-height: 2.5rem;
+   }
+
+   .great-show-img img{
+      width: 100%;
+      /* height: 334px; */
+   }
+
+   .blogs{
+      flex-direction: column;
+      align-items: center;
+
+
+   }
+   .form{
+      background-color: white;
+   
+   }
+   .form1, .form2, .form3{
+      border: 1px solid lightgray;
+   }
+   .blog{
+      grid-template-columns: repeat(1,1fr);
+      justify-items: center;
+   }
+
+   .footer-anchor a{
+      display: block;
+      line-height: 40px;
+   }
 }
