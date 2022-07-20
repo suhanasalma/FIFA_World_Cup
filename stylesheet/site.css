@@ -96,7 +96,14 @@ html{
    animation-fill-mode: forwards;
 
 }
-
+button:hover{
+   background-color: bisque;
+   color: black;
+}
+a:hover{
+   text-decoration: underline;
+   color:rgb(70, 16, 70);
+}
 
 .fa-greater-than{
    padding-left:.8rem ;
@@ -302,6 +309,15 @@ hr{
 MEDIA QUERY START
 =========================================================== */
 
+
+
+
+
+/* =======================================For Mobile Device=========================================================== */
+
+
+
+
 @media only screen and (max-width:688px) {
    .container{
       width: 100%;
@@ -312,13 +328,13 @@ MEDIA QUERY START
       align-items: center;
    }
 
-   .blogs{
+   .blogs, .team-blogs{
       flex-direction: column;
       align-items: center;
 
 
    }
-   .form{
+   .form, .team-form{
       background-color: white;
       width: 80%;
    
@@ -327,7 +343,7 @@ MEDIA QUERY START
       border: 1px solid lightgray;
       
    }
-   .blog{
+   .blog, .team-blog{
       grid-template-columns: repeat(1,1fr);
       justify-items: center;
    }
@@ -338,7 +354,7 @@ MEDIA QUERY START
    }
 }
 
-
+/* =======================================For Tablet Device=========================================================== */
 
 @media only screen and (min-width:689px) and (max-width:1025px) {
    .body{
@@ -348,12 +364,12 @@ MEDIA QUERY START
    .container{
       width: 100%;
    }
-   .blogs{
+   .blogs, .team-blogs{
       flex-direction: column
 
 
    }
-   .form{
+   .form, .team-form{
       background-color: white;
       display: flex;
       gap:20px;
@@ -361,7 +377,7 @@ MEDIA QUERY START
    
    
    }
-   .form1, .form2, .form3{
+   .form1, .form2, .form3, .team-form1, .team-form2, .team-form3{
       border: 1px solid lightgray;
       height: 80px;
       padding:20px 100px;
@@ -370,7 +386,7 @@ MEDIA QUERY START
    
 
    }
-   .blog{
+   .blog, .team-blog{
       grid-template-columns: repeat(2,1fr);
       justify-items: center;
       position: relative;
