@@ -35,8 +35,8 @@ html{
    width: 90%;
    height: 95%;
    margin-top: 29px;
-   animation: zoomin 1s linear 1;
-   animation-delay: 1s;
+   animation: zoomin .5s linear 1;
+   animation-delay: .4s;
    visibility: hidden;
    animation-fill-mode: forwards;
 
@@ -59,15 +59,15 @@ html{
    font-size: 350%;
    line-height: 4rem;
    margin: 0;
-   animation: movedown 1s linear 1;
-   animation-delay: 4s;
+   animation: movedown .5s linear 1;
+   animation-delay: .6s;
    visibility: hidden;
    animation-fill-mode: forwards;
  
 }
 .great-show p{
-   animation: movedown 1s linear 1;
-   animation-delay: 3s;
+   animation: movedown .5s linear 1;
+   animation-delay: .7s;
    visibility: hidden;
    animation-fill-mode: forwards;
 }
@@ -90,8 +90,8 @@ html{
    border: 0;
    margin: 2rem 0;
    cursor: pointer;
-   animation: movedown 1s linear 1;
-   animation-delay: 2s;
+   animation: movedown .5s linear 1;
+   animation-delay: .8s;
    visibility: hidden;
    animation-fill-mode: forwards;
 
