@@ -35,12 +35,52 @@ html{
    width: 90%;
    height: 95%;
    margin-top: 29px;
+   animation: zoomin 1s linear 1;
+   animation-delay: 1s;
+   visibility: hidden;
+   animation-fill-mode: forwards;
 
 }
+
+@keyframes zoomin {
+   0%{
+      transform: scale(.5);
+      visibility: visible;
+   }
+   100%{
+      transform: scale(1);
+      visibility: visible;
+   }
+   
+}
+
+
 .great-show h1{
    font-size: 350%;
    line-height: 4rem;
    margin: 0;
+   animation: movedown 1s linear 1;
+   animation-delay: 4s;
+   visibility: hidden;
+   animation-fill-mode: forwards;
+ 
+}
+.great-show p{
+   animation: movedown 1s linear 1;
+   animation-delay: 3s;
+   visibility: hidden;
+   animation-fill-mode: forwards;
+}
+@keyframes movedown {
+   0%{
+      transform: translateY(-100px);
+      visibility: visible;
+   }
+   100%{
+      transform: translateY(0);
+      visibility: visible;
+   }
+   
 }
 .great-show button{
    padding: 1rem 1.5rem;
@@ -49,6 +89,12 @@ html{
    color: white;
    border: 0;
    margin: 2rem 0;
+   cursor: pointer;
+   animation: movedown 1s linear 1;
+   animation-delay: 2s;
+   visibility: hidden;
+   animation-fill-mode: forwards;
+
 }
 
 
